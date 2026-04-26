@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: silver_hackernews
+    description: "Cleaned and standardized Hacker News stories"
+    columns:
+      - name: story_id
+        description: "The unique ID of the story"
+        tests:
+          - unique
+          - not_null
+      
+      - name: title
+        description: "The title of the story"
+        tests:
+          - not_null
+          
+      - name: author
+        description: "The user who posted the story"
+        tests:
+          - not_null

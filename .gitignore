@@ -1,0 +1,17 @@
+# Virtual Environments
+venv/
+env/
+
+# Databases and Raw Data
+data/*.duckdb
+data/*.json
+data/*.csv
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# dbt hidden files
+transformations/hn_models/target/
+transformations/hn_models/dbt_packages/
+transformations/hn_models/logs/

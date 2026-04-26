@@ -1,0 +1,60 @@
+[0m23:26:22.034574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDABFB8440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDA940F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDAE047890>]}
+
+
+============================== 23:26:22.045606 | ca2c68cb-884e-4992-aa95-7e9c968d3814 ==============================
+[0m23:26:22.045606 [info ] [MainThread]: Running with dbt=1.11.8
+[0m23:26:22.048105 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tiwar\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init hn_models', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:26:22.091905 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\tiwar\.dbt
+[0m23:26:22.099576 [debug] [MainThread]: Starter project path: C:\Users\tiwar\OneDrive\Documents\Projects\Data engineering\reddit-data-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m23:26:22.130619 [info ] [MainThread]: 
+Your new dbt project "hn_models" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:26:22.133437 [info ] [MainThread]: Setting up your profile.
+[0m23:26:57.888234 [info ] [MainThread]: Profile hn_models written to C:\Users\tiwar\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m23:26:57.890182 [debug] [MainThread]: Command `run_dbt.py init` succeeded at 23:26:57.889963 after 36.15 seconds
+[0m23:26:57.891025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDAE0B7360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDAE294830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDADEAFF00>]}
+[0m23:26:57.891970 [debug] [MainThread]: Flushing usage events
+[0m23:26:57.929442 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:47:40.079193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C647DD81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C64544F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C64A0BF890>]}
+
+
+============================== 22:47:40.118703 | 3f69665a-d999-4ce0-b085-35269b0c8285 ==============================
+[0m22:47:40.118703 [info ] [MainThread]: Running with dbt=1.11.8
+[0m22:47:40.119883 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tiwar\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:47:40.120871 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tiwar\OneDrive\Documents\Projects\Data engineering\reddit-data-pipeline\transformation\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:47:40.122620 [debug] [MainThread]: Command `run_dbt.py run` failed at 22:47:40.122345 after 0.16 seconds
+[0m22:47:40.123272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C649EE36F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C64A12C5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C64A0E8E20>]}
+[0m22:47:40.123898 [debug] [MainThread]: Flushing usage events
+[0m22:47:41.933919 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:49:19.439529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE72881A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE48EF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE956F890>]}
+
+
+============================== 22:49:19.443419 | 40afb739-c5fb-45c5-9bf5-d0607ddcebf9 ==============================
+[0m22:49:19.443419 [info ] [MainThread]: Running with dbt=1.11.8
+[0m22:49:19.444517 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tiwar\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:49:19.445198 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tiwar\OneDrive\Documents\Projects\Data engineering\reddit-data-pipeline\transformation\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:49:19.446212 [debug] [MainThread]: Command `run_dbt.py run` failed at 22:49:19.446094 after 0.16 seconds
+[0m22:49:19.446600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE938F6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE95DC5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE9598E20>]}
+[0m22:49:19.446990 [debug] [MainThread]: Flushing usage events
+[0m22:49:19.504813 [debug] [MainThread]: An error was encountered while trying to flush usage events
